@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'mm';
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navbar {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+header .navigation .navbar .navbar-brand {
+  display: none;
+}
+
+header .navigation .navbar .navbar-nav {
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header .navigation .navbar .navbar-nav .nav-item {
+  display: inline-block;
+}
+
+header .navigation .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  color: #DB0000;
+}
+
+header .navigation .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  font-family: "mm";
+}
+
+header .navigation .navbar .navbar-nav .nav-item .nav-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  margin: auto;
+  background-color: red;
+  -webkit-transition: width 250ms ease-in-out;
+  -o-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
+}
+
+header .navigation .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: red;
+}
+
+header .navigation .navbar .navbar-nav .nav-item .nav-link:hover::before {
+  width: 100%;
+}
+
+header .navigation::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), color-stop(0%, rgba(0, 0, 0, 0.1)), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 30px;
+}
+
+header .affix {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1030;
+  background-color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  header .navigation .navbar .navbar-nav .nav-link {
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navigation .navbar-brand {
+    display: block !important;
+  }
+
+  header .navigation .navbar-brand img {
+    width: 100px;
+  }
+}
