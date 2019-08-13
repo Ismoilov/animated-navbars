@@ -6,3 +6,5 @@ Dilmurod`s animated navbars library
 [stickyHiddenBrand](https://codepen.io/Dilmurod99/pen/gNgYQM)
 ***
 [rightAlign](https://codepen.io/Dilmurod99/pen/GRKpyPq)
+***
+[rightAlignWithSearch](https://codepen.io/Dilmurod99/pen/YzKyvGW)
